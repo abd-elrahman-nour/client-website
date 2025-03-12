@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" class="font-primary">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$CLAW - Homepage</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta
+      name="description"
+      content="The world's first AI-powered savage meme coin cat!"
+    />
+    <link rel="stylesheet" href="/dist/shared/css/global.css" />
+    <script src="/dist/pages/index/js/main.js" defer></script>
+  </head>
+  <body class="relative bg-[#0f1123] text-white">
+    <div
+      id="universal-errors-messages"
+      aria-live="polite"
+      role="alert"
+      aria-hidden="true"
+      class="fixed top-0 right-[50%] w-[90%] translate-x-[50%] rounded-lg border border-gray-800 bg-gray-900 px-8 py-2 text-red-400 transition-[top] duration-300 after:content-['⚠️'] sm:max-w-[40ch]"
+    >
+      <!-- Error messages will be dynamically added here -->
+    </div>
+    <header class="relative z-10 bg-[#0a0a21]">
+      <div
+        class="container mx-auto flex flex-col justify-between gap-y-8 p-4 lg:flex-row"
+      >
+        <div
+          class="flex grow flex-col items-center justify-stretch gap-x-12 gap-y-4 sm:grow-0 sm:flex-row sm:justify-between"
+        >
+          <div class="flex w-full flex-row items-center gap-x-4">
+            <a href="#"
+              ><img
+                src="https://placehold.co/50x50"
+                alt="$CLAW logo"
+                aria-hidden="true"
+                class="rounded-full"
+              />
+              <span class="sr-only">Go to homepage</span></a
+            >
+            <span
+              class="text-primary font-mono text-2xl font-bold text-[#a77fa4]"
+              >$CLAW</span
+            >
+          </div>
+          <div
+            class="flex w-full max-w-[288px] items-center rounded-3xl bg-[#1b1c23] p-1"
+          >
+            <div class="mr-2 flex-shrink-0">
+              <span
+                class="flex h-8 w-8 items-center justify-center rounded-full bg-black text-sm text-white"
+                >CA:</span
+              >
+            </div>
+            <div class="min-w-0 flex-1 overflow-hidden">
+              <p
+                id="contract-address"
+                class="m-0 overflow-hidden text-sm text-ellipsis whitespace-nowrap"
+              >
+                0x1234567890abcdef1234567890abcdef12345678
+              </p>
+            </div>
+            <button
+              id="copy-button"
+              aria-live="polite"
+              class="ml-2 flex-shrink-0 cursor-pointer rounded-3xl bg-black px-4 py-1 text-sm text-white transition-colors duration-300 hover:bg-blue-950"
+            >
+              Copy
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex grow flex-row items-center justify-between gap-x-12 lg:grow-0"
+        >
+          <div class="relative z-10">
+            <!-- Gradient buttons needs a container because otherwise the `::before` element is gonna be below elements -->
+            <button class="gradient-button cursor-pointer bg-black px-4 py-1">
+              Lunch App
+            </button>
+          </div>
+
+          <div class="flex flex-row items-center gap-x-4">
+            <a href="#">
+              <img
+                src="/assets/icons/x-icon.svg"
+                alt=""
+                class="h-8 w-8"
+                aria-hidden="true"
+              />
+              <span class="sr-only">X (Twitter)</span>
+            </a>
+            <a href="#">
+              <img
+                src="/assets/icons/github-icon.svg"
+                alt=""
+                class="h-8 w-8"
+                aria-hidden="true"
+              />
+              <span class="sr-only">Github</span>
+            </a>
+            <a href="#">
+              <img
+                src="/assets/icons/youtube-icon.svg"
+                alt=""
+                class="h-8 w-8"
+                aria-hidden="true"
+              />
+              <span class="sr-only">Youtube</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div
+        class="flex h-[calc(100dvh-var(--header-height))] flex-col items-center justify-center gap-y-4 sm:h-[calc(100dvh-var(--header-height-sm))] lg:h-[calc(100dvh-var(--header-height-lg))]"
+      >
+        <h1 class="text-fluid px-2 text-center text-5xl leading-16 font-bold">
+          <span class="font-mono text-[#a77fa4]">$CLAW</span><br />
+          The world's first AI-powered<br />
+          <span
+            class="bg-gradient-to-r from-[#ffeeee] via-[#a77fa4] to-[#ffeeee] bg-clip-text text-transparent"
+            >savage meme coin cat!</span
+          >
+        </h1>
+        <div class="relative z-10">
+          <button
+            class="gradient-button mt-8 cursor-pointer bg-black px-12 py-4"
+          >
+            Chat With $CLAW
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="fixed bottom-0 left-0 w-full border-t border-gray-800 px-8 py-4 text-center"
+    >
+      <p>&copy; $CLAW <span id="copyright-year-display"></span></p>
+    </footer>
+  </body>
+</html>
